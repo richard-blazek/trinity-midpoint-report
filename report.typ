@@ -255,7 +255,24 @@ and I had to keep it running overnight.
 
 The next day, my mentor asked me about it and I explained that I need to wait for the 11,000 models to
 compile. Then he explained to me that we definitely are not going to wait for 11,000 models to compile
-and I should ask some colleague responsible for the CI which models are important for testing.
+and I should ask a colleague responsible for the CI which models are important for testing. I asked him
+and he told me that he will prepare the list and send it to me.
+
+== 6 April to 10 April
+
+The colleague who promised to send me the list of models used for testing did not send me anything, so
+I reminded him about that and he told me it's in progress. In the meanwhile, I wrote documentation for
+the new pass disabling mechanism and merged it into the repository.
+
+On Thursday, my manager asked me how is my internship going and whether I would consider working at
+Intel after graduation. I replied that I think my internship is going well and I would be happy to
+work there.
+
+== 13 April to 17 April
+
+== 20 April to 24 April
+
+== 27 April to 1 May
 
 #pagebreak()
 
