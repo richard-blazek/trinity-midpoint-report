@@ -260,15 +260,20 @@ and he told me that he will prepare the list and send it to me.
 
 == 6 April to 10 April
 
-The colleague who promised to send me the list of models used for testing did not send me anything, so
-I reminded him about that and he told me it's in progress. In the meanwhile, I wrote documentation for
-the new pass disabling mechanism and merged it into the repository.
+The colleague who promised to send me the list of models used for testing did not send me anything,
+so I reminded him about that and he told me it's in progress. I was starting to think that if I didn't
+bother asking him and simply ran the analysis on all models instead, it would have been finished by
+now. In the meanwhile, I wrote documentation for the new pass disabling mechanism and merged it into
+the repository.
 
 On Thursday, my manager asked me how is my internship going and whether I would consider working at
 Intel after graduation. I replied that I think my internship is going well and I would be happy to
 work there.
 
 == 13 April to 17 April
+My mentor introduced me to another problem the team was working on which was compiling repeating
+blocks. Many machine learning models (such as LLaMa) consist of blocks of multiple operations that
+are repeated multiple times (e.g. Convolution, Clamp, BatchNorm).
 
 == 20 April to 24 April
 
