@@ -273,9 +273,26 @@ work there.
 == 13 April to 17 April
 My mentor introduced me to another problem the team was working on which was compiling repeating
 blocks. Many machine learning models (such as LLaMa) consist of blocks of multiple operations that
-are repeated multiple times (e.g. Convolution, Clamp, BatchNorm).
+are repeated multiple times (e.g. Convolution, Clamp, BatchNorm). Currently, the compiler had to
+do all compilation steps for each repetition separately, which could take a long time for large
+models. If we compiled such repeating block only once and then call the compiled block repeatedly,
+the compilation could get much faster.
+
+First ticket pertaining to this problem was adding the support for repeating blocks in a compiler
+pass for serialising ELF files (represented as IR) into binary data. Previously, the pass would
+crash if its argument was a repeating block and my goal was to have it generate the correct
+output instead.
+
+My mentor had a working version of that pass in another branch, which however also contained
+other changes and was not considered "pretty". Nevertheless, I could compile a sample model
+(with repeating blocks) in that branch and dump the IR before and after the pass. This way,
+I obtained the reference input and output for the pass from which I created a test. Now I only
+had to modify the pass to pass (pun not intended) the test.
 
 == 20 April to 24 April
+I made the changes required to get the pass working correctly. My mentor also told me to refactor
+the tests for the pass because they defined a lot of attributes which were not relevant for testing
+the pass. After that, my pull request got merged and ticket closed.
 
 == 27 April to 1 May
 
