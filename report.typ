@@ -294,7 +294,18 @@ I made the changes required to get the pass working correctly. My mentor also to
 the tests for the pass because they defined a lot of attributes which were not relevant for testing
 the pass. After that, my pull request got merged and ticket closed.
 
+There was also one simple ticket, which required changing the default settings of the repeated
+blocks compilation. The change was passing weights as arguments to repeated blocks, rather than
+embedding them as constants inside the block. The original behaviour produced incorrect programs
+if each repetition of the blocks used different weights because the block had the weights from
+the first repetition embedded inside. In this task, I simply toggled the default value of one flag
+in the settings and then changed the tests to reflect the new behavior.
+
 == 27 April to 1 May
+
+== 4 April to 8 May
+
+== 11 April to 15 May
 
 #pagebreak()
 
